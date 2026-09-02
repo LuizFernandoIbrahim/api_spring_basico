@@ -64,6 +64,11 @@ public class TaskController {
     public ResponseEntity<Task> complete(@PathVariable UUID id) {
         return ResponseEntity.ok(taskService.complete(id));
     }
+    @PatchMapping("/{id}/cancel")
+    public ResponseEntity<Task> cancel(@PathVariable UUID id) {
+        return ResponseEntity.ok(taskService.complete(id));
+    }
+
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable UUID id) {

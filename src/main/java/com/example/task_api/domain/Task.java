@@ -42,5 +42,10 @@ public class Task {
 
     public void complete() {
         this.status = TaskStatus.COMPLETED;
+
+
+    public void cancel (){
+        this.status = TaskStatus.CANCELED;
+        }
     }
 }
